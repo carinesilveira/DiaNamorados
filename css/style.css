@@ -1,0 +1,39 @@
+body{
+    background-image: url(/img/Gradient_background_with_geometric_elements.jpg);
+    text-align: center;
+}
+.painel{
+    border-radius: 15px;
+    /* width: 30%;
+    height: 70vh; */
+    width: 500px;
+    height: 570px;
+    background-color: #e86d67;
+    margin: auto;
+    padding-top: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#sim{
+    height: 60px;
+    width: 80px;
+    background-color:#D8BFD8;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    font-size: 25px;
+    margin-left: -90px;
+    cursor: pointer;
+}
+#nao{
+    position: absolute;
+    height: 60px;
+    width: 80px;
+    background-color:#D8BFD8;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    font-size: 25px;
+    margin-left: 10px;
+    cursor: pointer;
+}
