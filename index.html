@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te amo</title>
+
+    <style>
+        body{
+            background-image: url(img/Gradient_background_with_geometric_elements.jpg);
+            text-align: center;
+        }
+        .painel{
+            border-radius: 15px;
+            /* width: 30%;
+            height: 70vh; */
+            width: 500px;
+            height: 570px;
+            background-color: #e86d67;
+            margin: auto;
+            padding-top: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #sim{
+            height: 60px;
+            width: 80px;
+            background-color:#D8BFD8;
+            border: 2px solid white;
+            border-radius: 10px;
+            color: white;
+            font-size: 25px;
+            margin-left: -90px;
+            cursor: pointer;
+        }
+        #nao{
+            position: absolute;
+            height: 60px;
+            width: 80px;
+            background-color:#D8BFD8;
+            border: 2px solid white;
+            border-radius: 10px;
+            color: white;
+            font-size: 25px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="painel">
+        <h1>Para: Amor</h1>
+        <!-- <img src="https://media.tenor.com/y-2iB8M6hdgAAAAC/i-love-you-i-love-you-very-much.gif"> -->
+        <img src="https://gifman.net/wp-content/uploads/2019/06/ursinho-fofo-apaixonado.gif">
+        <h2>Aceita ficar comigo pra sempre?</h2>
+
+        <a href="https://media.tenor.com/ArOvmHXqzEMAAAAM/mr-bean-weird-face.gif"><button id="sim">Sim!</button></a>
+        <button onmouseover="fuja()" id="nao">Não!</button>
+
+       
+    </div>
+
+    <script>
+        function fuja(){
+            var btnNao = document.getElementById("nao") //Chamando o botão não
+            var janelaLarg = window.innerWidth //largura maxima da pagina
+            var janelaAlt = window.innerHeight //altura maxina da pagina
+            var larXmax = janelaLarg - btnNao.offsetWidth //calculo para determinar o limite na tela (X=largura)
+            var altYmax = janelaAlt - btnNao.offsetHeight
+            var posicaoAleatoriaX = Math.floor(Math.random()*larXmax) //floor arredonda as posicoes, numero inteiro
+            var posicaoAleatoriaY = Math.floor(Math.random()*altYmax)
+
+            btnNao.style.left = posicaoAleatoriaX + "px"//estilizar o botão do lado esquerdo
+            btnNao.style.top = posicaoAleatoriaY + "px"
+        }   
+    </script>
+
+</body>
+</html>
